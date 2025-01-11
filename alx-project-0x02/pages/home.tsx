@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Card from '@/components/common/Card';
 import PostModal from '@/components/common/PostModal';
 import { Post } from '@/interfaces'; 
+import Header from '@/components/layout/Header';
 
 const Home: React.FC = () => {
 
@@ -29,13 +30,14 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div className="p-4">
+    <div className="p-4"> 
+      <Header />
 
       <button
         onClick={() => setIsModalOpen(true)}
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4" // Added margin-bottom
       >
-        Open Modal
+        Add Post
       </button>
 
       <PostModal
