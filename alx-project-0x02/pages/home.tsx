@@ -1,43 +1,3 @@
-// import Card from "@/components/common/Card";
-// const Home: React.FC = () => {
-//   return (
-//     <div>
-//       <h1>Hi, this is the Home page (/)</h1>
-//       <Card
-//         title="Card 1"
-//         content="This is the Home page and this content is passed thought the card component in the home component"
-//       />
-//       <Card
-//         title="Card 2(Nation anthem 1)"
-//         content="Arise, O Compatriots 
-// Nigeria's call obey 
-// To serve our fatherland 
-// With love and strength and faith 
-// The labour of our heroes past, 
-// shall never be in vain 
-// To serve with heart and might, 
-// One nation bound in freedom, peace and unity." 
-//       />
-//       <Card
-//         title="Card 3 (Nation anthem 2)"
-//         content="Oh God of creation, 
-// Direct our noble cause 
-// Guide thou our leaders right 
-// Help our youth the truth to know 
-// In love and honesty to grow 
-// And living just and true 
-// Great lofty heights attain 
-// To build a nation where peace and justice shall reign" 
-//       />
-//     </div>
-//   );
-// };
-
-// export default Home;
-
-
-
-// pages/home.tsx
 import { useState } from 'react';
 import Card from '@/components/common/Card';
 import PostModal from '@/components/common/PostModal';
@@ -69,7 +29,7 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div className="p-4"> {/* Added some padding */}
+    <div className="p-4">
 
       <button
         onClick={() => setIsModalOpen(true)}
