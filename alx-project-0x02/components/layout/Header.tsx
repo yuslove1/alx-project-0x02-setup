@@ -12,11 +12,15 @@ const Header: React.FC = () => {
             <Link href="/home" className="hover:bg-gray-700 px-3 py-2 rounded">Home</Link>
           </li>
           <li>
-            <Link href="/about" className="hover:bg-gray-700 px-3 py-2 rounded">About</Link>
-          </li>
-          <li>
             <Link href="/posts" className="hover:bg-gray-700 px-3 py-2 rounded">Posts</Link>
           </li>
+          <li>
+            <Link href="/users" className="hover:bg-gray-700 px-3 py-2 rounded">Users</Link>
+          </li>
+          <li>
+            <Link href="/about" className="hover:bg-gray-700 px-3 py-2 rounded">About</Link>
+          </li>
+        
         </ul>
       </nav>
     </header>

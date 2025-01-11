@@ -16,6 +16,7 @@ export interface PostModalProps {
   onSave: (post: Post) => void; // Function to save the post data
 }
 
+// Interface for the Button component props
 export interface ButtonProps {
   text: string; // Text to display on the button
   size?: 'small' | 'medium' | 'large'; // Optional size prop
@@ -23,8 +24,26 @@ export interface ButtonProps {
   onClick?: () => void; // Optional click handler
 }
 
+// Interface for the Post component props
 export interface PostProps {
   title: string;
   content: string;
   userId: number;
+}
+
+// Interface for the User component props
+export interface UserProps {
+  id: number;
+  name: string;
+  email: string;
+  address: {
+    street: string;
+    suite: string;
+    city: string;
+    zipcode: string;
+    geo: {
+      lat: string;
+      lng: string;
+    };
+  };
 }
