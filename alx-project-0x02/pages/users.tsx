@@ -16,9 +16,7 @@ const Users: React.FC<{ users: UserProps[] }> = ({ users }) => {
         {/* Use a responsive grid to display user cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {users.map((user) => ( // Map over the users array
-            // Pass the user data as props to the UserCard component
-            // Use the user's ID as the key for optimal performance
-            <UserCard key={user.id} {...user} />
+            <UserCard key={user.id} {...user} /> // Spread the user object as props
           ))}
         </div>
       </div>
